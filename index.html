@@ -1,45 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Four card feature section</title>
+    <title>Frontend Mentor | Four card feature section</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  
-  Reliable, efficient delivery
-  Powered by Technology
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
+    <link rel="stylesheet" href="Css/style.css">
+    
+    <style>
+      .attribution { font-size: 11px; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+  </head>
 
-  Supervisor
-  Monitors activity to identify project roadblocks
+  <body>
+    <main class="card-container">
+      <header class="header">
+        <h1 class="header__title">
+          Reliable, efficient delivery
+          <span>
+            Powered by Technology
+          </span>
+        </h1>
 
-  Team Builder
-  Scans our talent network to create the optimal team for your project
+        <p class="header__paragraph">
+          Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful
+        </p>
+      </header>
 
-  Karma
-  Regularly evaluates our talent to ensure quality
+      <article class="cards">
+        <section class="card card--super">
+          <div class="card__texts">
+            <h2 class="card__title">Supervisor</h2>
+            <p class="card__paragraph">
+             Monitors activity to identify project roadblocks
+            </p>
+          </div>
+          <img src="images/icon-supervisor.svg" alt="icono de lupa" class="card__icon">
+        </section>
 
-  Calculator
-  Uses data from past projects to provide better delivery estimates
+        <section class="card card--team">
+          <div class="card__texts">
+            <h2 class="card__title">Team Builder</h2>
+            <p class="card__paragraph">
+               Scans our talent network to create the optimal team for your project
+            </p>
+          </div>
+          <img src="images/icon-team-builder.svg" alt="icono home" class="card__icon">
+        </section>
 
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+        <section class="card card--karma">
+          <div class="card__texts">
+            <h2 class="card__title">Karma</h2>
+            <p class="card__paragraph">
+              Regularly evaluates our talent to ensure quality
+            </p>
+          </div>
+          <img src="images/icon-karma.svg" alt="icono de bombilla" class="card__icon">
+        </section>
+
+        <section class="card card--calcu">
+          <div class="card__texts">
+            <h2 class="card__title">Calculator</h2>
+            <p class="card__paragraph">
+              Uses data from past projects to provide better delivery estimates 
+          </div>
+          <img src="images/icon-calculator.svg" alt="icono ordenador" class="card__icon">
+        </section>
+      </article>
+    </main>
+    
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+  </body>
 </html>

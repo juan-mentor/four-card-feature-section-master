@@ -1,0 +1,199 @@
+:root {
+ /********** colors **********/
+    /* Primary */
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    /* Neutral */
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+html {
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    background-color: var(--very-light-gray);
+
+}
+
+/* .poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+} */
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+
+/* .poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+} */
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* .poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+} */
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* .poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+} */
+
+/* .poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+} */
+
+/* .poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+} */
+
+/* .poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+} */
+
+/* .poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+} */
+
+/* .poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+} */
+
+/* .poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+} */
+
+/* .poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+} */
+
+
+
+/* .poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+} */
+
+/* .poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+} */
+
+/* .poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+} */
+
+.header {
+    text-align: center;
+    width: 83%;
+    max-width: 34rem;
+    margin: 5rem auto;
+}
+
+.header__title {
+    font-weight: 200;
+    font-size: 1.7rem;
+}
+
+.header__title span {
+    font-weight: 600;
+}
+
+.header__paragraph {
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+.cards {
+    width: 85%;
+    margin: auto;
+}
+
+.card {
+    padding: 1.8rem;
+    margin-bottom: 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 10px 15px  hsla(212, 86%, 64%, 0.3);
+    border-radius: 5px;
+}
+
+.card--super {
+    border-top: 5px solid var(--cyan);
+}
+.card--team {
+    border-top: 5px solid var(--red);
+}
+.card--karma {
+    border-top: 5px solid var(--orange);
+}
+.card--calcu {
+    border-top: 5px solid var(--blue);
+}
+
+.card__texts {
+    margin-bottom: 2.1rem;
+}
+
+.card__title {
+    font-size: 1.2rem;
+}
+
+.card__paragraph {
+    line-height: 1.5;
+}
+
+.card__icon {
+    display: block;
+    margin-left: auto;
+}
