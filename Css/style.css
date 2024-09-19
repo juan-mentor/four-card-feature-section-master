@@ -29,7 +29,11 @@ body {
     font-weight: 400;
     font-style: normal;
     background-color: var(--very-light-gray);
-
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .header {
@@ -57,12 +61,11 @@ body {
     
 .cards {
     width: 85%;
-
     margin: auto;
-}
+  }
 
 .card {
-    width: 352px;
+    width: min(100%, 352px);
     padding: 1.8rem;
     margin: auto;
     margin-bottom: 1.5rem;
@@ -74,12 +77,15 @@ body {
   .card--super {
     border-top: 5px solid var(--cyan);
   }
+
   .card--team {
     border-top: 5px solid var(--red);
   }
+
   .card--karma {
     border-top: 5px solid var(--orange);
   }
+  
   .card--calcu {
     border-top: 5px solid var(--blue);
   }
@@ -126,13 +132,11 @@ body {
     align-items: center;
   }
     
-
   .card--super {
     grid-area: supervi;
     transform: translateY(-50%);
-    
   }
-  
+    
   .card--team {
     grid-area: team;
   }
